@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Map FCC</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <h4 id="description">1753 - 2015 Varience of temperature</h4>
+    <div id = "tooltip"></div>
+    <svg id="canvas">
+    </svg>
+    <svg id = "legend">
+        <g>
+          <rect x = "10" y = "10" width = "40" height = "40" fill = "#76a5a6"> </rect>
+          <text x = "10" y = "90">-1 or less </text>
+        </g>
+        <g>
+        <rect x = "90" y = "10" width = "40" height = "40" fill = "#dbd39a"> </rect>
+          <text x = "90" y = "90"> Below avg</text>
+        </g>
+         <rect x = "170" y = "10" width = "40" height = "40" fill = "#dbc19a"> </rect>
+        <text x = "170" y = "90"> Above avg</text>
+        <g>
+        <rect x = "250" y = "10" width = "40" height = "40" fill = "#db9a9a"> </rect>
+          <text x = "250" y = "90">+1+ </text>
+        </g>
+      </svg>
+
+</body>
+<script defer src="script.js"></script>
+<script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
